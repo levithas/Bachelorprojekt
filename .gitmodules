@@ -1,3 +1,6 @@
 [submodule "GadgetBridge"]
 	path = GadgetBridge
 	url = git@github.com:levithas/GadgetBridge.git
+[submodule "AiXDroid"]
+	path = AiXDroid
+	url = git@github.com:levithas/AiXDroid.git
