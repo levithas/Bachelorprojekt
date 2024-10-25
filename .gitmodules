@@ -1,0 +1,3 @@
+[submodule "GadgetBridge"]
+	path = GadgetBridge
+	url = git@github.com:levithas/GadgetBridge.git
