@@ -28,9 +28,12 @@ Entwicklung einer quelloffnenen InterApp-AIKommunikationsschnittstelle zur Berei
 
 Konzeption und Umsetzung einer mobilen Anwendung zur Bereitstellung von KI-Modellen am Beispiel einer Schlafphasenanalyse
 
+Konzeption und Umsetzung einer mobilen Anwendung zur Bereitstellung von KI-Modellen für Android-Apps am Beispiel einer Schlafphasenanalyse
 
-# Titelauswahl:
-##### Entwicklung einer quelloffenen Softwarelösung zur KI-Bereitstellung durch Inter-App Kommunikation auf Android-Geräten am Beispiel einer Schlafphasenanalyse
+
+
+# Finale Titelauswahl:
+##### Konzeption und Umsetzung einer mobilen Anwendung zur Bereitstellung von KI-Modellen für Android-Apps am Beispiel einer Schlafphasenanalyse
 
 
 
