@@ -42,3 +42,52 @@ Wie gut das Modell am Ende des Trainings auf neue, nicht in den Trainingsdaten v
 
 #### Andere Frameworks
 "Was gibt es noch für andere Frameworks die KI-Modelle auf mobilen Geräten ermöglichen?"
+
+
+
+
+# Nochmal Aufbereitet
+
+### maschinelles Lernen
+- KI im Allgemeinen
+- Unterschiede der Modelle (supervised, unsupervised, reinforcement) -> Was wird verwendet?
+- Zeitreihenanalysen
+
+
+
+
+
+
+
+
+### Schlafforschung
+- Bedeutung von Schlafphasen
+- Messung von Schlafphasen
+
+### Android als Entwicklungsplattform
+- MVVM (Quelle: https://developer.android.com/topic/architecture , https://developer.android.com/topic/architecture/recommendations)
+	- Datenfluss zwischen Data <-> Domain <-> UI
+
+Da mobile Geräte eingeschränkt sind in ihren verfügbaren Ressourcen kann das Betriebssystem jederzeit einzelne Komponenten von Apps beenden. Zustände müssen demnach außerhalb der Komponenten gespeichert werden. Die Komponenten müssen außerdem unabhängig voneinander gestartet werden können.
+Mit steigendem Umfang der Anwendung, steigt auch die Anforderung an eine solide Architektur um Stabilität, sowie einfache Skalierbarkeit und Testbarkeit zu ermöglichen. Hierzu lässt sich das Prinzip der "Separierung von Verantwortlichkeiten" (Seperation of Concerns) anwenden. Es besagt, dass ein System in klar abgegrenzte Module oder Komponenten unterteilt werden sollte, wobei jede Komponente eine spezifische Aufgabe oder Verantwortung übernimmt. Die Benutzeroberfläche (UI), Geschäftslogik und Datenverwaltung werden also in separaten Schichten organisiert. Dadurch wird der Code übersichtlicher und verhindert, dass Änderungen in einem Bereich des Systems Beeinträchtigungen in anderen Bereichen verursachen.
+
+[Hier ein Bild der verschiedenen Layer]
+
+Um die Daten, die der Nutzer über das UI in die App eingibt nicht zu verlieren durch mögliche Ressourcenfreigaben des Betriebssystems werden Zustände und Daten in Datenmodellen gestaltet. Datenmodelle repräsentieren die Daten einer App und sind unabhängig von den UI-Elementen und anderen Komponenten der App. Diese Modelle sind nicht an den Lebenszyklus des UI oder der Komponenten gebunden, werden aber dennoch zerstört, sobald das Betriebssystem den Prozess der App aus dem Speicher entfernt. Datenmodelle vereinfachen zusätzlich die Testbarkeit der Datenschicht.
+
+
+Daten werden über eine zentrale Datenquelle (SSTO - "Single Source of Truth") bereitgestellt. Der Zugriff auf diese SSTO erfolgt in einem Unidirektionalen Datenfluss Muster (UDF). Der Zustand fließt nur in eine Richtung, während Ereignisse, die die Daten verändern, in die entgegengesetzte Richtung fließen. Beispielsweise fließen Anwendungsdaten von Datenquellen zum UI. Nutzeraktionen, wie das Drücken eines Buttons wandern von der UI zur SSOT, wo die Anwendungsdaten geändert und in einer unveränderlichen Form bereitgestellt werden. Durch Anwendung dieses Patterns wird die Konsistenz der Daten gesichert. Durch den definierten Fluss der Daten ist es außerdem einfacher Fehler zu entdecken.
+
+[Bild eines Datenflusses]
+
+
+
+
+
+- Bedeutung und Folgen der Containerisierung
+
+
+
+
+
+

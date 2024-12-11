@@ -27,3 +27,23 @@ Die von mir in dieser Arbeit genutzte Smartwatch \textit{BangleJS} besitzt die g
 Die BangleJS besitzt bereits eine einfache Schlafphasenanalyse, die auf Schwellwerten beruht.
 In dieser Arbeit werde ich eine Anwendung konzipieren und implementieren, welche durch neue Schlafphasenerkennungs-Algorithmen erweiterbar ist, um so die Qualität der Erfassung verbessern zu können. Desweiteren wird ein beispielhaftes Modell erarbeitet, welches zur Schlafphasen genutzt werden kann.
 Meine Implementierung wird abschließend über GitHub öffentlich zur Verfügung gestellt und dem offiziellen Repository des BangleJS AppLoaders unter \url{https://github.com/espruino/BangleApps} als Contribution angeboten.
+
+
+### Änderungshinweise:
+- Es soll mehr auf die verschiedenen Nutzer (Entwickler und Endnutzer) eingegangen werden
+- Mehr "Was ist der wirkliche nutzen?" und weniger drum herum
+
+
+### Nächster Versuch
+
+Künstliche Intelligenz (KI) ist heute aus vielen Lebensbereichen nicht mehr wegzudenken. Sie hilft, große Datenmengen zu verarbeiten und komplexe Informationen verständlicher zu machen. Viele Unternehmen, die KI-Modelle anbieten, gewähren keinen Einblick in ihre Systeme. Diese laufen auf leistungsstarken Servern, wobei sensible Daten über das Internet übertragen werden müssen. In der Regel bieten diese Unternehmen keine Möglichkeit zur Weiterentwicklung oder zum Zugang für externe Entwickler. Jedes Unternehmen muss somit ein eigenes Modell basierend auf eigenen Datensätzen entwickeln und eine Infrastruktur bereitstellen, um die Nutzung dieser Modelle zu ermöglichen. Dadurch wird die Integration von KI-Modellen in Anwendungen für Entwickler erschwert. Endnutzer hingegen müssen darauf vertrauen, dass ihre Daten sicher und korrekt verarbeitet werden und dass die Qualität der KI-Modelle den Erwartungen entspricht. Ein Wechsel zu einem anderen Modell oder die lokale Auswertung der eigenen Daten ist in der Regel nicht vorgesehen.
+
+Meine App setzt hier an, indem sie es ermöglicht, KI-Modelle direkt auf mobilen Geräten zu nutzen, ohne auf große Unternehmen oder Cloud-Dienste angewiesen zu sein. Der Endnutzer kann so einfach ein Modell auswählen, dass im Internet frei zur Verfügung steht, es auf sein Gerät laden und Prognosen oder Kategorisierungen für die eigenen Daten erstellen lassen. Für Entwickler bietet die App eine unkomplizierte Schnittstelle, um Modelle zu integrieren, ohne sich um die Verwaltung von Daten und Modellen kümmern zu müssen. Die App ermöglicht es den Nutzern, Daten nahtlos zwischen verschiedenen Anwendungen auszutauschen. Nachdem der Nutzer die Kommunikation einmal freigegeben hat, übernimmt die App automatisch die Analyse und Verarbeitung der Daten, ohne dass weitere manuelle Eingriffe erforderlich sind.
+
+
+
+### Beispiel anhand der Schlafphasenanalyse
+
+In der Schlafphasenanalyse werden KI-Modelle mit Daten von Smartwatches trainiert, um die Schlafzyklen der Nutzer aufzuzeichnen. Eigentlich werden für die Schlafphasenanalyse in der Medizin sogenannte Polysomnographen verwendet. Diese Geräte sind aber sehr teuer und die Auswertung der Messergebnisse erfordert ein Expertenwissen, welches der normale Anwender nicht hat. Die Aufzeichnung der Schlafphasen bietet Nutzern jedoch Vorteile. So kann er besser nachvollziehen wie lang er geschlafen hat, welche Schlafphasen er die Nacht für wie lange hatte oder ob eine allgemeine Unruhe vorhanden war. Er kann auch davon Profitieren, dass zum Beispiel sein Wecker ihn in einer leichteren Schlafphase weckt. So würde die Wecker-App anhand der Schlafdaten prüfen, ob der Anwender sich z.B. 30 Minuten vor der eigentlichen Weckzeit in einer leichten Schlafphase befindet und die Weckzeit dementsprechend nach vorne verlegen.
+
+Allerdings bringt die Aufzeichnung von Schlafdaten auch Herausforderungen mit sich, insbesondere im Hinblick auf den Schutz der Privatsphäre. Schlafgewohnheiten sind sehr persönliche Informationen, weshalb viele Nutzer zögern, entsprechende Apps zu verwenden. Es wird ein Modell auf gelabelten Daten trainiert. Dieses Modell dient als Baseline, um zu demonstrieren, wie KI-Modelle in meine App eingebunden und genutzt werden können und so die Privatsphäre der Nutzer zu gewährleisten.
