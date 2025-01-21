@@ -54,6 +54,9 @@ Wie gut das Modell am Ende des Trainings auf neue, nicht in den Trainingsdaten v
 - Zeitreihenanalysen
 
 
+### Techniken des maschinellen Lernens
+
+
 
 
 

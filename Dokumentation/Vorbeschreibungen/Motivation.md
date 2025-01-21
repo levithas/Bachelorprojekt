@@ -47,3 +47,10 @@ Meine App setzt hier an, indem sie es ermöglicht, KI-Modelle direkt auf mobilen
 In der Schlafphasenanalyse werden KI-Modelle mit Daten von Smartwatches trainiert, um die Schlafzyklen der Nutzer aufzuzeichnen. Eigentlich werden für die Schlafphasenanalyse in der Medizin sogenannte Polysomnographen verwendet. Diese Geräte sind aber sehr teuer und die Auswertung der Messergebnisse erfordert ein Expertenwissen, welches der normale Anwender nicht hat. Die Aufzeichnung der Schlafphasen bietet Nutzern jedoch Vorteile. So kann er besser nachvollziehen wie lang er geschlafen hat, welche Schlafphasen er die Nacht für wie lange hatte oder ob eine allgemeine Unruhe vorhanden war. Er kann auch davon Profitieren, dass zum Beispiel sein Wecker ihn in einer leichteren Schlafphase weckt. So würde die Wecker-App anhand der Schlafdaten prüfen, ob der Anwender sich z.B. 30 Minuten vor der eigentlichen Weckzeit in einer leichten Schlafphase befindet und die Weckzeit dementsprechend nach vorne verlegen.
 
 Allerdings bringt die Aufzeichnung von Schlafdaten auch Herausforderungen mit sich, insbesondere im Hinblick auf den Schutz der Privatsphäre. Schlafgewohnheiten sind sehr persönliche Informationen, weshalb viele Nutzer zögern, entsprechende Apps zu verwenden. Es wird ein Modell auf gelabelten Daten trainiert. Dieses Modell dient als Baseline, um zu demonstrieren, wie KI-Modelle in meine App eingebunden und genutzt werden können und so die Privatsphäre der Nutzer zu gewährleisten.
+
+
+
+
+
+# Neue Einführung
+
